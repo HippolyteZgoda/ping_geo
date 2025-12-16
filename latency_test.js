@@ -71,12 +71,10 @@ function testPolymarket() {
     console.log("📡 TESTING POLYMARKET CLOB...");
     const startPoly = Date.now();
     
-    // On essaie de lire l'orderbook (Public Endpoint)
-    // Si 403 -> On est bloqué (USA)
-    // Si 200 -> On est bon (Europe/Canada)
+    // On tape /time qui est public et léger
     const options = {
         hostname: 'clob.polymarket.com',
-        path: '/live-activity', // Endpoint léger
+        path: '/time', 
         method: 'GET',
         headers: { 
             'User-Agent': 'Mozilla/5.0',
