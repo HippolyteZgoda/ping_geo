@@ -1,0 +1,14 @@
+{
+  "name": "ping-geo-diagnostic",
+  "version": "1.0.0",
+  "description": "Network Diagnostic Tool for HFT",
+  "main": "latency_test.js",
+  "scripts": {
+    "start": "node latency_test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {}
+}
+
